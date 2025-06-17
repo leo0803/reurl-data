@@ -16,6 +16,9 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:  # ✅ 這一段是關鍵
+      name: github-pages
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -26,7 +29,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: .  # 你的 JSON 就會從這裡部署
 
       - name: Deploy to GitHub Pages
         id: deployment
