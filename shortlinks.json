@@ -1,0 +1,10 @@
+{
+  "marketing": {
+    "sale": "https://example.com/summer-sale",
+    "signup": "https://example.com/register"
+  },
+  "internal": {
+    "erp": "https://intranet.example.com/erp",
+    "email": "https://mail.example.com"
+  }
+}
